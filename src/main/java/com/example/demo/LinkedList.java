@@ -46,11 +46,27 @@ static LinkedList insert(LinkedList list,int data) {
 		   currnode=currnode.next;
 		   
 	   }
+	   System.out.println();
    }
    
    static LinkedList delete(LinkedList list,int data) {
-	   
-	   
+	   Node currNode = list.head, prev = null;
+	   if (currNode != null && currNode.data == data) {
+		   list.head = currNode.next;
+		   System.out.println( "found the key "+data+"  and deleted");
+		   return list;
+	   }
+	   while (currNode != null && currNode.data != data) {
+		   prev = currNode;
+		   currNode = currNode.next;
+	   }
+	   if (currNode != null) {
+		   prev.next = currNode.next;
+		   System.out.println( "found the key "+data+"  and deleted");
+	   }
+	   if (currNode == null) {
+		   System.out.println(data + " not found");
+	   }
 	   return list;
 	   
    }

@@ -17,6 +17,8 @@ public class DataStructureApplication {
 		list=LinkedList.insert(list, 9);
 		list=LinkedList.insert(list, 4);
 		list.printlist(list);
+		list=LinkedList.delete(list,2);
+		list.printlist(list);
 	}
 
 }
