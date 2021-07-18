@@ -2,7 +2,6 @@ package com.example.demo;
 
 public class LinkedList {
    Node head;
-   
     static class Node {
 	   int data;
 	   Node next;
