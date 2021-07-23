@@ -19,6 +19,20 @@ public class DataStructureApplication {
 		list.printlist(list);
 		list=LinkedList.delete(list,2);
 		list.printlist(list);
+
+		//doublyLinkedList implementation
+
+		DoublyLinkedList dlist=new DoublyLinkedList();
+		//adding at the front
+		dlist=DoublyLinkedList.insertAtFront(dlist,5);
+		dlist=DoublyLinkedList.insertAtFront(dlist,6);
+		dlist=DoublyLinkedList.insertAtFront(dlist,7);
+		DoublyLinkedList.printdoublylist(dlist);
+		//adding at end
+		dlist=DoublyLinkedList.insertAtEnd(dlist,1);
+		dlist=DoublyLinkedList.insertAtEnd(dlist,2);
+		dlist=DoublyLinkedList.insertAtEnd(dlist,3);
+		DoublyLinkedList.printdoublylist(dlist);
 	}
 
 }
