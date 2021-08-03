@@ -33,6 +33,19 @@ public class DataStructureApplication {
 		dlist=DoublyLinkedList.insertAtEnd(dlist,2);
 		dlist=DoublyLinkedList.insertAtEnd(dlist,3);
 		DoublyLinkedList.printdoublylist(dlist);
+
+
+		//Stack implementation using using linkedlist
+		 StackUsingLinkedlist slist=new StackUsingLinkedlist();
+		 slist =StackUsingLinkedlist.push(slist,3);
+		slist=StackUsingLinkedlist.push(slist,4);
+		slist=StackUsingLinkedlist.push(slist,2);
+		slist=StackUsingLinkedlist.push(slist,5);
+		StackUsingLinkedlist.printlist(slist);
+		slist=StackUsingLinkedlist.pop(slist);
+		slist=StackUsingLinkedlist.pop(slist);
+		StackUsingLinkedlist.printlist(slist);
+
 	}
 
 }
