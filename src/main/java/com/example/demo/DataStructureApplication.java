@@ -46,6 +46,20 @@ public class DataStructureApplication {
 		slist=StackUsingLinkedlist.pop(slist);
 		StackUsingLinkedlist.printlist(slist);
 
+
+		//Queue implementation using linkedlist
+		QueueUsingLinkedList qlist=new QueueUsingLinkedList();
+		qlist=QueueUsingLinkedList.enqueue(qlist,3);
+		qlist=QueueUsingLinkedList.enqueue(qlist,8);
+		qlist=QueueUsingLinkedList.enqueue(qlist,5);
+		qlist=QueueUsingLinkedList.enqueue(qlist,1);
+		qlist=QueueUsingLinkedList.enqueue(qlist,4);
+		QueueUsingLinkedList.printlist(qlist);
+		qlist=QueueUsingLinkedList.dequeue(qlist);
+		qlist=QueueUsingLinkedList.dequeue(qlist);
+		QueueUsingLinkedList.printlist(qlist);
+
+
 	}
 
 }
