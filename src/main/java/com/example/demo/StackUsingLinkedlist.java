@@ -3,7 +3,7 @@ package com.example.demo;
 public class StackUsingLinkedlist{
    Node first;
 
-    public class Node{
+    public static class Node{
         int data;
         Node next;
 
@@ -14,14 +14,14 @@ public class StackUsingLinkedlist{
 
     }
 
-            public  StackUsingLinkedlist push(StackUsingLinkedlist slist, int i) {
+            public static StackUsingLinkedlist push(StackUsingLinkedlist slist, int i) {
                 Node newnode=new Node(i);
                 newnode.next=slist.first;
                 slist.first=newnode;
                 return slist;
             }
 
-        public  void printlist(StackUsingLinkedlist slist) {
+        public static void printlist(StackUsingLinkedlist slist) {
             Node currnode=slist.first;
             System.out.print("Stack list is: ");
             while(currnode!=null){
@@ -31,7 +31,7 @@ public class StackUsingLinkedlist{
             System.out.println();
         }
 
-        public StackUsingLinkedlist pop(StackUsingLinkedlist slist) {
+        public static StackUsingLinkedlist pop(StackUsingLinkedlist slist) {
             Node temp=slist.first;
             slist.first=slist.first.next;
             System.out.println("Removed element :"+temp.data);
@@ -41,7 +41,7 @@ public class StackUsingLinkedlist{
 
 
 
-        public void duplicatemain(){
+        public static void duplicatemain(){
             StackUsingLinkedlist slist=new StackUsingLinkedlist();
             push(slist,3);
             push(slist,4);

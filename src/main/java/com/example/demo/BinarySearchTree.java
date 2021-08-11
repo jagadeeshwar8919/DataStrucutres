@@ -76,7 +76,7 @@ public class BinarySearchTree {
                 return root;
             }
 
-  public void duplicatemain(){
+  public static void duplicatemain(){
       BinarySearchTree btlist=new BinarySearchTree();
       btlist.insert(7);
       btlist.insert(9);

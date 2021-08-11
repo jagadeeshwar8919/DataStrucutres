@@ -2,7 +2,7 @@ package com.example.demo;
 
 public class DoublyLinkedList {
          Node head;
-         public class Node{
+         public static class Node{
             int data;
             Node pre;
             Node next;
@@ -14,7 +14,7 @@ public class DoublyLinkedList {
              }
          }
 
-         public DoublyLinkedList insertAtEnd(DoublyLinkedList list,int data){
+         public static DoublyLinkedList insertAtEnd(DoublyLinkedList list, int data){
              Node newnode=new Node(data);
              if(list.head==null){
                  newnode.pre=null;
@@ -30,7 +30,7 @@ public class DoublyLinkedList {
              return list;
          }
 
-         public DoublyLinkedList  insertAtFront(DoublyLinkedList list, int data){
+         public static DoublyLinkedList  insertAtFront(DoublyLinkedList list, int data){
              Node newnode=new Node(data);
              newnode.pre=null;
              newnode.next=list.head;
@@ -41,7 +41,7 @@ public class DoublyLinkedList {
              return list;
 
         }
-        public void printdoublylist(DoublyLinkedList list){
+        public static void printdoublylist(DoublyLinkedList list){
              Node currnode=list.head;
              System.out.print("Doubly linked list  : ");
              while(currnode!=null){
@@ -52,7 +52,7 @@ public class DoublyLinkedList {
         }
 
 
-            public void duplicatemain(){
+            public static void duplicatemain(){
                 DoublyLinkedList dlist=new DoublyLinkedList();
                 //adding at the front
                 insertAtFront(dlist,5);

@@ -10,24 +10,24 @@ public class DataStructureApplication {
 		SpringApplication.run(DataStructureApplication.class, args);
 
 		//LinkedList implementation
-		LinkedList list=new LinkedList();
-		list.duplicatemain();
+		LinkedList.duplicatemain();
 
 		//doublyLinkedList implementation
-		DoublyLinkedList dlist=new DoublyLinkedList();
-		dlist.duplicatemain();
+		DoublyLinkedList.duplicatemain();
 
 		//Stack implementation using using linkedlist
-		 StackUsingLinkedlist slist=new StackUsingLinkedlist();
-		 slist.duplicatemain();
+		StackUsingLinkedlist.duplicatemain();
 
 		//Queue implementation using linkedlist
-		QueueUsingLinkedList qlist=new QueueUsingLinkedList();
-		qlist.duplicatemain();
+
+		QueueUsingLinkedList.duplicatemain();
 
 		//binarysearchtree implementation
-			BinarySearchTree btlist=new BinarySearchTree();
-			btlist.duplicatemain();
+		BinarySearchTree.duplicatemain();
+
+		//graph implementation using adjacency list way
+		Graph.duplicatmain();
+
 
 
 

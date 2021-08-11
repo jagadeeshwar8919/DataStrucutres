@@ -2,7 +2,7 @@ package com.example.demo;
 
 public class QueueUsingLinkedList {
        Node first,rear;
-         class Node{
+         static class Node{
             int data;
             Node next;
 
@@ -14,7 +14,7 @@ public class QueueUsingLinkedList {
         }
 
 
-        public  QueueUsingLinkedList enqueue(QueueUsingLinkedList list,int data){
+        public static QueueUsingLinkedList enqueue(QueueUsingLinkedList list, int data){
             Node newnode=new Node(data);
             if(list.rear==null){
                 list.first=newnode;
@@ -26,7 +26,7 @@ public class QueueUsingLinkedList {
             return list;
         }
 
-        public  QueueUsingLinkedList dequeue(QueueUsingLinkedList list){
+        public static QueueUsingLinkedList dequeue(QueueUsingLinkedList list){
             if(list.first==null){
                 return null;
             }
@@ -39,7 +39,7 @@ public class QueueUsingLinkedList {
             return list;
         }
 
-            public  void printlist(QueueUsingLinkedList list){
+            public static void printlist(QueueUsingLinkedList list){
                 Node currnode=list.first;
                 System.out.print("The queue list is :");
                 while(currnode!=null){
@@ -49,7 +49,7 @@ public class QueueUsingLinkedList {
                 System.out.println();
             }
 
-        public void duplicatemain(){
+        public static void duplicatemain(){
             QueueUsingLinkedList qlist=new QueueUsingLinkedList();
             enqueue(qlist,3);
             enqueue(qlist,8);

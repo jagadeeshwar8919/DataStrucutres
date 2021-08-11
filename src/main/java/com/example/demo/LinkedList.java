@@ -2,7 +2,7 @@ package com.example.demo;
 
  public class LinkedList {
 		   Node head;
-			public class Node {
+			public static class Node {
 			   int data;
 			   Node next;
 			public Node(int data) {
@@ -18,7 +18,7 @@ package com.example.demo;
 		   }
    
   
-		public LinkedList insert(LinkedList list,int data) {
+		public static LinkedList insert(LinkedList list, int data) {
 			   Node newnode=new Node(data);
 			   if(list.head==null) {
 				   list.head=newnode;
@@ -37,7 +37,7 @@ package com.example.demo;
 
 		   }
    
-		   public void printlist(LinkedList list) {
+		   public static void printlist(LinkedList list) {
 			   Node currnode=list.head;
 			   System.out.print("Linked List is: ");
 			   while(currnode!=null) {
@@ -48,7 +48,7 @@ package com.example.demo;
 			   System.out.println();
 		   }
 
-		   public LinkedList delete(LinkedList list,int data) {
+		   public static LinkedList delete(LinkedList list, int data) {
 			   Node currNode = list.head, prev = null;
 			   if (currNode != null && currNode.data == data) {
 				   list.head = currNode.next;
@@ -70,7 +70,7 @@ package com.example.demo;
 
 		   }
 
-		   public void duplicatemain(){
+		   public static void duplicatemain(){
 			   LinkedList list=new LinkedList();
 			   insert(list, 1);
 			   insert(list, 2);
